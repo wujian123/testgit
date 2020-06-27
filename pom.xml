@@ -9,8 +9,6 @@
     <packaging>jar</packaging>
 
     <name>akka-test</name>
-
-
     <properties>
         <junit.version>4.12</junit.version>
         <logback.version>1.2.3</logback.version>
