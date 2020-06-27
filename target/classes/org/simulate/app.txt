@@ -1,0 +1,202 @@
+Classfile /Users/wujian/Work/Test/workspace_akka/akka-test/target/classes/org/simulate/App.class
+  Last modified 2020-5-14; size 1464 bytes
+  MD5 checksum 569aa01edba6d387f901cf4665d41090
+  Compiled from "App.java"
+public class org.simulate.App
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #16.#47        // java/lang/Object."<init>":()V
+   #2 = Fieldref           #48.#49        // java/lang/System.out:Ljava/io/PrintStream;
+   #3 = String             #50            // test
+   #4 = Methodref          #51.#52        // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #5 = Fieldref           #14.#53        // org/simulate/App.LOGGER:Lorg/slf4j/Logger;
+   #6 = InterfaceMethodref #54.#55        // org/slf4j/Logger.info:(Ljava/lang/String;)V
+   #7 = Methodref          #16.#56        // java/lang/Object.hashCode:()I
+   #8 = Methodref          #51.#57        // java/io/PrintStream.println:(I)V
+   #9 = InterfaceMethodref #58.#59        // org/simulate/IService.add:(II)I
+  #10 = Class              #60            // java/lang/StringBuilder
+  #11 = Methodref          #10.#47        // java/lang/StringBuilder."<init>":()V
+  #12 = Methodref          #10.#61        // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #13 = Methodref          #10.#62        // java/lang/StringBuilder.toString:()Ljava/lang/String;
+  #14 = Class              #63            // org/simulate/App
+  #15 = Methodref          #64.#65        // org/slf4j/LoggerFactory.getLogger:(Ljava/lang/Class;)Lorg/slf4j/Logger;
+  #16 = Class              #66            // java/lang/Object
+  #17 = Utf8               LOGGER
+  #18 = Utf8               Lorg/slf4j/Logger;
+  #19 = Utf8               <init>
+  #20 = Utf8               ()V
+  #21 = Utf8               Code
+  #22 = Utf8               LineNumberTable
+  #23 = Utf8               LocalVariableTable
+  #24 = Utf8               this
+  #25 = Utf8               Lorg/simulate/App;
+  #26 = Utf8               main
+  #27 = Utf8               ([Ljava/lang/String;)V
+  #28 = Utf8               args
+  #29 = Utf8               [Ljava/lang/String;
+  #30 = Utf8               add
+  #31 = Utf8               (Lorg/simulate/IService;II)I
+  #32 = Utf8               service
+  #33 = Utf8               Lorg/simulate/IService;
+  #34 = Utf8               a
+  #35 = Utf8               I
+  #36 = Utf8               b
+  #37 = Utf8               i
+  #38 = Utf8               StackMapTable
+  #39 = Utf8               add2
+  #40 = Utf8               (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #41 = Utf8               s1
+  #42 = Utf8               Ljava/lang/String;
+  #43 = Utf8               s2
+  #44 = Utf8               <clinit>
+  #45 = Utf8               SourceFile
+  #46 = Utf8               App.java
+  #47 = NameAndType        #19:#20        // "<init>":()V
+  #48 = Class              #67            // java/lang/System
+  #49 = NameAndType        #68:#69        // out:Ljava/io/PrintStream;
+  #50 = Utf8               test
+  #51 = Class              #70            // java/io/PrintStream
+  #52 = NameAndType        #71:#72        // println:(Ljava/lang/String;)V
+  #53 = NameAndType        #17:#18        // LOGGER:Lorg/slf4j/Logger;
+  #54 = Class              #73            // org/slf4j/Logger
+  #55 = NameAndType        #74:#72        // info:(Ljava/lang/String;)V
+  #56 = NameAndType        #75:#76        // hashCode:()I
+  #57 = NameAndType        #71:#77        // println:(I)V
+  #58 = Class              #78            // org/simulate/IService
+  #59 = NameAndType        #30:#79        // add:(II)I
+  #60 = Utf8               java/lang/StringBuilder
+  #61 = NameAndType        #80:#81        // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #62 = NameAndType        #82:#83        // toString:()Ljava/lang/String;
+  #63 = Utf8               org/simulate/App
+  #64 = Class              #84            // org/slf4j/LoggerFactory
+  #65 = NameAndType        #85:#86        // getLogger:(Ljava/lang/Class;)Lorg/slf4j/Logger;
+  #66 = Utf8               java/lang/Object
+  #67 = Utf8               java/lang/System
+  #68 = Utf8               out
+  #69 = Utf8               Ljava/io/PrintStream;
+  #70 = Utf8               java/io/PrintStream
+  #71 = Utf8               println
+  #72 = Utf8               (Ljava/lang/String;)V
+  #73 = Utf8               org/slf4j/Logger
+  #74 = Utf8               info
+  #75 = Utf8               hashCode
+  #76 = Utf8               ()I
+  #77 = Utf8               (I)V
+  #78 = Utf8               org/simulate/IService
+  #79 = Utf8               (II)I
+  #80 = Utf8               append
+  #81 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #82 = Utf8               toString
+  #83 = Utf8               ()Ljava/lang/String;
+  #84 = Utf8               org/slf4j/LoggerFactory
+  #85 = Utf8               getLogger
+  #86 = Utf8               (Ljava/lang/Class;)Lorg/slf4j/Logger;
+{
+  public org.simulate.App();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 6: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lorg/simulate/App;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #3                  // String test
+         5: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: getstatic     #5                  // Field LOGGER:Lorg/slf4j/Logger;
+        11: ldc           #3                  // String test
+        13: invokeinterface #6,  2            // InterfaceMethod org/slf4j/Logger.info:(Ljava/lang/String;)V
+        18: return
+      LineNumberTable:
+        line 11: 0
+        line 12: 8
+        line 13: 18
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      19     0  args   [Ljava/lang/String;
+
+  public int add(org.simulate.IService, int, int);
+    descriptor: (Lorg/simulate/IService;II)I
+    flags: ACC_PUBLIC
+    Code:
+      stack=3, locals=5, args_size=4
+         0: iload_2
+         1: bipush        10
+         3: if_icmple     8
+         6: iconst_1
+         7: ireturn
+         8: aload_1
+         9: invokevirtual #7                  // Method java/lang/Object.hashCode:()I
+        12: istore        4
+        14: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        17: iload         4
+        19: invokevirtual #8                  // Method java/io/PrintStream.println:(I)V
+        22: aload_1
+        23: iload_2
+        24: iload_3
+        25: invokeinterface #9,  3            // InterfaceMethod org/simulate/IService.add:(II)I
+        30: ireturn
+      LineNumberTable:
+        line 16: 0
+        line 17: 6
+        line 19: 8
+        line 20: 14
+        line 21: 22
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      31     0  this   Lorg/simulate/App;
+            0      31     1 service   Lorg/simulate/IService;
+            0      31     2     a   I
+            0      31     3     b   I
+           14      17     4     i   I
+      StackMapTable: number_of_entries = 1
+        frame_type = 8 /* same */
+
+  public java.lang.String add2(java.lang.String, java.lang.String);
+    descriptor: (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=3, args_size=3
+         0: new           #10                 // class java/lang/StringBuilder
+         3: dup
+         4: invokespecial #11                 // Method java/lang/StringBuilder."<init>":()V
+         7: aload_1
+         8: invokevirtual #12                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        11: aload_2
+        12: invokevirtual #12                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        15: invokevirtual #13                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        18: areturn
+      LineNumberTable:
+        line 25: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      19     0  this   Lorg/simulate/App;
+            0      19     1    s1   Ljava/lang/String;
+            0      19     2    s2   Ljava/lang/String;
+
+  static {};
+    descriptor: ()V
+    flags: ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: ldc           #14                 // class org/simulate/App
+         2: invokestatic  #15                 // Method org/slf4j/LoggerFactory.getLogger:(Ljava/lang/Class;)Lorg/slf4j/Logger;
+         5: putstatic     #5                  // Field LOGGER:Lorg/slf4j/Logger;
+         8: return
+      LineNumberTable:
+        line 8: 0
+}
+SourceFile: "App.java"
